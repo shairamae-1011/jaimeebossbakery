@@ -1,0 +1,220 @@
+html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background-color: #fff7e6;
+    color: #5a3e36;
+    text-align: center;
+}
+
+/* Header and Navigation */
+header {
+    background-color: #8b4513;
+    color: white;
+    padding: 15px 0;
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    margin-bottom: 10px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+nav ul li a:hover {
+    color: #ffcc00;
+}
+
+.home {
+    background-image: url(https://scontent.fbag5-1.fna.fbcdn.net/v/t39.30808-6/319320108_6058176820873903_4186747505059997776_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=f727a1&_nc_ohc=ug3L4OfCrb0Q7kNvgHRxQW_&_nc_oc=AdmdjUzuJYnbTZHCBO6GLes5-GCOt3ZB6lfrLn0mXvlzo5CbBBFMTDfRcdgF5HjKuB8&_nc_zt=23&_nc_ht=scontent.fbag5-1.fna&_nc_gid=ig8PhDCj0QchL1-8tGa6CQ&oh=00_AYGHBlyi6bt6Ndz2kUv4aHlc1JrDQlnm48fCDzh5W03GQA&oe=67E45078);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    /* padding: 120px 20px; */
+    text-align: center;
+    box-shadow: inset 0 0 0 1000px rgba(139, 139, 139, 0.5);
+}
+
+/* Home Section */
+#home {
+    padding: 200px 20px 100px;
+    color: white;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+}
+
+#home h2 {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+}
+
+/* Menu Section */
+#menu {
+    padding: 110px 20px;
+    background-color: #f4e1d2;
+}
+
+#menu h2 {
+    font-size: 2rem;
+    margin-bottom: 30px;
+}
+
+.menu-item {
+    background: white;
+    padding: 20px;
+    margin: 20px;
+    display: inline-block;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 300px;
+    transition: 0.3s;
+}
+
+.menu-item:hover {
+    transform: translateY(-5px);
+}
+
+.menu_image img {
+    width: 100%;
+    border-radius: 10px;
+    height: 200px;
+    object-fit: cover;
+}
+
+.menu_icon {
+    margin: 10px 0;
+    color: #ffcc00;
+}
+
+.menu-item span {
+    font-size: 1.2rem;
+    font-weight: bold;
+    display: block;
+    margin-top: 10px;
+}
+
+/* Reviews Section */
+#reviews {
+    padding: 115px 20px;
+    background-color: #ffe6cc;
+}
+
+.review {
+    background: white;
+    padding: 20px;
+    margin: 20px auto;
+    width: 50%;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.review h3 {
+    margin-bottom: 10px;
+}
+
+.review p {
+    font-style: italic;
+}
+
+.review .menu_icon {
+    color: #ffcc00;
+    margin-bottom: 10px;
+}
+
+/* Contact Section */
+#contact {
+    padding: 115px 20px;
+    background-color: #f4e1d2;
+}
+
+#contact-form {
+    background: white;
+    padding: 20px;
+    margin: 20px auto;
+    width: 50%;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#contact-form label {
+    display: block;
+    font-weight: bold;
+    margin: 10px 0 5px;
+}
+
+#contact-form input,
+#contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#contact-form button {
+    background: #8b4513;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+    border-radius: 5px;
+}
+
+#contact-form button:hover {
+    background: #a0522d;
+}
+
+/* Footer */
+footer {
+    background-color: #8b4513;
+    color: white;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 1.5rem;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    #home {
+        padding: 100px 10px 40px;
+    }
+
+    .menu-item {
+        max-width: 100%;
+    }
+
+    .review, #contact-form {
+        width: 80%;
+    }
+}
